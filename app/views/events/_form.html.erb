@@ -23,7 +23,7 @@
   </div>
   <div class="mb-3">
     <div class="field">
-    <% if current_user.gender == 'woman' %>
+    <% if current_user.woman? %>
       <%= f.label :only_woman%>
       <%= f.check_box :only_woman, checked: false %>
     <% end %>
